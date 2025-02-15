@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillSprint - Microlearning Platform</title>
+  <link rel="stylesheet" href="skillsprint_styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>SkillSprint</h1>
+      <nav>
+        <ul>
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#daily-challenge">Daily Challenge</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <h2>Bite-Sized Learning for Busy People</h2>
+        <p>Quick lessons that fit your coffee break. Explore topics, master skills.</p>
+        <button id="startBtn">Start Learning</button>
+      </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons">
+      <div class="container">
+        <h2>Featured Lessons</h2>
+        <div class="lesson-list" id="lessonList">
+          <!-- Lessons will be injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Challenge Section -->
+    <section id="daily-challenge">
+      <div class="container">
+        <h2>Daily Challenge</h2>
+        <p>Test your knowledge with today's trivia quiz!</p>
+        <button id="challengeBtn">Take the Challenge</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sidebar Ads -->
+  <aside id="ads">
+    <div class="container">
+      <h3>Sponsored</h3>
+      <div class="ad-item">
+        <p>Ad content goes here</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Community Section (placeholder) -->
+  <section id="community" class="container" style="margin-bottom: 2rem;">
+    <h2>Community & Gamification</h2>
+    <p>Coming soon: Leaderboards, achievement badges, and discussion threads!</p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SkillSprint. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lesson Modal -->
+  <div id="lessonModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn" id="lessonModalClose">&times;</span>
+      <h2 id="modalLessonTitle">Lesson Title</h2>
+      <div id="modalLessonBody">Lesson content...</div>
+    </div>
+  </div>
+
+  <!-- Quiz Modal -->
+  <div id="quizModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn" id="quizModalClose">&times;</span>
+      <h2>Daily Trivia Quiz</h2>
+      <form id="quizForm"></form>
+      <button id="quizSubmitBtn" style="margin-top: 1rem;">Submit Answers</button>
+      <p id="quizResult" style="margin-top: 1rem; font-weight: bold;"></p>
+    </div>
+  </div>
+
+  <script src="skillsprint_scripts.js"></script>
+</body>
+</html>

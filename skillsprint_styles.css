@@ -1,0 +1,231 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background: #4caf50;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('https://via.placeholder.com/1200x300') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  #hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  #hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  #hero button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #hero button:hover {
+    background: #e68900;
+  }
+  
+  /* Lessons Section */
+  #lessons {
+    padding: 2rem 0;
+    background: #fff;
+  }
+  #lessons h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  .lesson-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+  }
+  .lesson-item {
+    flex: 0 0 45%;
+    background: #e0e0e0;
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 250px;
+  }
+  .lesson-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .lesson-item p {
+    margin-bottom: 1rem;
+  }
+  .lesson-item button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .lesson-item button:hover {
+    background: #1976d2;
+  }
+  
+  /* Daily Challenge Section */
+  #daily-challenge {
+    padding: 2rem 0;
+    background: #fafafa;
+    text-align: center;
+  }
+  #daily-challenge h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  #daily-challenge button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #9c27b0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #daily-challenge button:hover {
+    background: #7b1fa2;
+  }
+  
+  /* Ads Section */
+  #ads {
+    background: #fff;
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
+  #ads .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ad-item {
+    background: #ffc;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  /* Community Section placeholder */
+  #community {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+  }
+  .closeBtn {
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+  }
+  .closeBtn:hover {
+    color: #000;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header h1 { font-size: 1.2rem; }
+    nav ul li a { font-size: 0.9rem; }
+    #hero h2 { font-size: 2rem; }
+    #hero p { font-size: 1rem; }
+    .lesson-list { gap: 0.5rem; }
+    .lesson-item { flex: 0 0 70%; min-width: 200px; }
+  }
+  @media (max-width: 480px) {
+    #hero h2 { font-size: 1.8rem; }
+    #hero p { font-size: 0.9rem; }
+    .lesson-item { flex: 0 0 80%; }
+    #daily-challenge h2 { font-size: 1.4rem; }
+  }  
